@@ -1,0 +1,7 @@
+{
+    "globals" : {
+        "site_name": "55bits",
+        "root_dev": "http://localhost:3000/",
+        "root_prod": "http://55bits.github.io/"
+    }
+}

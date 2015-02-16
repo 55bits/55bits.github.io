@@ -1,0 +1,102 @@
+<!-- .main -->
+<div class="main">
+    <!-- .wrapper -->
+    <div class="wrapper">
+        <!-- .page -->
+        <div class="page">
+            <!-- .page__head -->
+            <header class="page__head">
+                <h1 class="page__title">Contato</h1>
+            </header>
+            <!-- /.page__head -->
+
+            <!-- .page__body -->
+            <div class="page__body">
+                <!-- .contact-grid -->
+                <div class="contact-grid">
+                    <!-- .contact-cell -->
+                    <div class="contact-cell contact-cell--main">
+                        <!-- .contact-form -->
+                        <form action="//formspree.io/anderson.juhasc@gmail.com" method="POST" class="contact-form">
+                            <!-- .contact-fields -->
+                            <ul class="contact-fields">
+                                <li>
+                                    <label for="" class="contact-form__label">Nome:</label>
+                                    <div class="contact-form__input">
+                                        <input type="text" class="input input--full" required title="Precisa conter um nome" name="name">
+                                    </div>
+                                </li>
+                                <li>
+                                    <label for="" class="contact-form__label">Email:</label>
+                                    <div class="contact-form__input">
+                                        <input type="email" class="input input--full" required title="Precisa ser um endereço de e-mail válido" name="_replyto">
+                                    </div>
+                                </li>
+                                <li>
+                                    <label for="" class="contact-form__label">Assunto:</label>
+                                    <div class="contact-form__input">
+                                        <input type="text" class="input input--full" required title="Precisa conter assunto" name="_subject" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <label for="" class="contact-form__label">Mensagem:</label>
+                                    <div class="contact-form__input">
+                                        <textarea name="message" class="textarea textarea--full" required title="Precisa ter pelo menos 100 caracteres" rows="5"></textarea>
+                                    </div>
+                                </li>
+                            </ul>
+                            <!-- /.contact-fields -->
+
+                            <!-- .contact-action -->
+                            <div class="contact-action">
+                                <input type="submit" class="contact-action__btn btn btn--medium btn--primary" value="Enviar">
+                            </div>
+                            <!-- /.contact-action -->
+
+                            <% if(environment == "production") { %>
+                                <% root = root_prod %>
+                            <% } else { %>
+                                <% root = root_dev %>
+                            <% } %>
+                            <input type="text" name="_gotcha" style="display:none" />
+                            <input type="hidden" name="_cc" value="fernando@55bits.com, costa@55bits.com" />
+                            <input type="hidden" name="_next" value="<%= root %>obrigado" />
+                        </form>
+                        <!-- /.contact-form -->
+                    </div>
+                    <!-- /.contact-cell -->
+
+                    <!-- .contact-cell -->
+                    <div class="contact-cell contact-cell--sidebar">
+                        <h4 class="sidebar-title">Entre em contato:</h4>
+
+                        <ul class="sidebar-list">
+                            <li>
+                                <strong>Celular:</strong> (+55 61) 9643-1337
+                            </li>
+                            <li>
+                                <strong>Email:</strong> info@55bits.com
+                            </li>
+                        </ul>
+
+                        <h4 class="sidebar-title">Rede Social:</h4>
+
+                        <ul class="sidebar-social">
+                            <li>
+                                <a href="https://www.facebook.com/55bit" target="_blank">
+                                    <img src="assets/img/fb2.png" alt="Facebook" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.contact-cell -->
+                </div>
+                <!-- /.contact-grid -->
+            </div>
+            <!-- /.page__body -->
+        </div>
+        <!-- /.page -->
+    </div>
+    <!-- /.wrapper -->
+</div>
+<!-- /.main -->

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+
+    <title><%= site_name %> - <%= page_title %></title>
+</head>
+<body>
+    <!-- .head -->
+    <header class="head">
+        <!-- .wrapper -->
+        <div class="wrapper">
+            <!-- .head-grid -->
+            <div class="head-grid">
+                <!-- .head-cell -->
+                <div class="head-cell head-cell--top">
+                    <!-- .head-logo -->
+                    <a href="/" class="head-logo">
+                        <img src="assets/img/55bits.png" class="head-logo__img" alt="55bits" />
+
+                        <div class="head-logo__body">
+                            <div class="head-logo-title">
+                                55<span class="head-logo-title__bits">bits</span>
+                            </div>
+                            <div class="head-logo__subtitle">Marketing digital</div>
+                        </div>
+                    </a>
+                    <!-- /.head-logo -->
+                </div>
+                <!-- /.head-cell -->
+
+                <!-- .head-cell -->
+                <div class="head-cell head-cell--bot">
+                    <!-- .head-nav -->
+                    <ul class="head-nav">
+                        <li>
+                            <a href="/" title="">Início</a>
+                        </li>
+                        <li>
+                            <a href="/servicos" title="">Serviços</a>
+                        </li>
+                        <li>
+                            <a href="/sobrenos" title="">Sobre nós</a>
+                        </li>
+                        <li>
+                            <a href="/contato" title="">Contato</a>
+                        </li>
+                    </ul>
+                    <!-- /.head-nav -->
+                </div>
+                <!-- /.head-cell -->
+            </div>
+            <!-- /.head-grid -->
+        </div>
+        <!-- /.wrapper -->
+    </header>
+    <!-- /.head -->
+
+    <%- yield %>
+
+    <!-- .foot -->
+    <footer class="foot">
+        <!-- .wrapper -->
+        <div class="wrapper">
+            <!-- .foot-grid -->
+            <div class="foot-grid">
+                <!-- .foot-cell -->
+                <div class="foot-cell">
+                    <!-- .foot-item -->
+                    <div class="foot-item">
+                        <div class="foot-item__left">
+                            <div class="foot-item__bg">
+                                <img src="assets/img/phone.png" alt="" class="foot-item__img" />
+                            </div>
+                        </div>
+
+                        <div class="foot-item__body">
+                            <h4 class="foot-item__title">Celular</h4>
+                            <p>T:(+55 61) 9643-1337</p>
+                        </div>
+                    </div>
+                    <!-- /.foot-item -->
+                </div>
+                <!-- /.foot-cell -->
+
+                <!-- .foot-cell -->
+                <div class="foot-cell">
+                    <!-- .foot-item -->
+                    <div class="foot-item">
+                        <div class="foot-item__left">
+                            <div class="foot-item__bg">
+                                <img src="assets/img/email.png" alt="" class="foot-item__img" />
+                            </div>
+                        </div>
+
+                        <div class="foot-item__body">
+                            <h4 class="foot-item__title">Email</h4>
+                            <p>info@55bits.com</p>
+                        </div>
+                    </div>
+                    <!-- /.foot-item -->
+                </div>
+                <!-- /.foot-cell -->
+
+                <!-- .foot-cell -->
+                <div class="foot-cell">
+                    <!-- .foot-item -->
+                    <div class="foot-item">
+                        <div class="foot-item__left">
+                            <div class="foot-item__bg">
+                                <img src="assets/img/social.png" alt="" class="foot-item__img" />
+                            </div>
+                        </div>
+
+                        <div class="foot-item__body">
+                            <h4 class="foot-item__title">Nossa Fan Page</h4>
+                            <ul class="foot-social">
+                                <li>
+                                    <a href="https://www.facebook.com/55bit" target="_blank">
+                                        <img src="assets/img/fb1.png" alt="Facebook" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /.foot-item -->
+                </div>
+                <!-- /.foot-cell -->
+
+                <!-- .foot-cell -->
+                <div class="foot-cell">
+                    <!-- .foot-item -->
+                    <div class="foot-item">
+                        <div class="foot-item__left">
+                            <div class="foot-item__bg">
+                                <img src="assets/img/copy.png" alt="" class="foot-item__img" />
+                            </div>
+                        </div>
+
+                        <div class="foot-item__body">
+                            <p>&copy; 2015 - 55bits. Todos os direitos compartilhados.</p>
+                        </div>
+                    </div>
+                    <!-- /.foot-item -->
+                </div>
+                <!-- /.foot-cell -->
+            </div>
+            <!-- /.foot-grid -->
+        </div>
+        <!-- /.wrapper -->
+    </footer>
+    <!-- /.foot -->
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-57455522-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+</body>
+</html>
