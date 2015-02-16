@@ -1,0 +1,59 @@
+.customers
+  +cf
+
+.customers-grid
+  +cf
+  margin-left: -24px
+  text-align: center
+
+.customers-cell
+  display: inline-block
+  margin-right: -0.28em
+  margin-bottom: 12px
+  padding-left: 24px
+  width: 50%
+  +media-query(lap)
+    width: auto
+
+.customers-item
+  position: relative
+  &:hover
+    .customers-item__body
+      visibility: visible
+
+.customers-item__img
+  border-radius: 50%
+  border: 3px solid rgba(242, 153, 19, 1)
+  +media-query(palm)
+    max-width: 100%
+    width: 100%
+  +media-query(lap)
+    height: 160px
+    width: 160px
+  +media-query(desk)
+    height: auto
+    width: auto
+
+.customers-item__body
+  border-radius: 50%
+  background: rgba(246, 201, 133, 1)
+  border: 3px solid rgba(242, 153, 19, 1)
+  visibility: hidden
+  color: #444
+  font-size: 14px
+  padding-top: 30px
+  position: absolute
+  text-align: center
+  height: 96%
+  width: 100%
+  left: 0
+  top: 0
+  > p
+    padding: 0 24px
+
+.customers-item__title
+  color: rgba(242, 153, 19, 1)
+  font-size: 20px
+  font-weight: 400
+  line-height: 1.2
+  margin-bottom: 6px
